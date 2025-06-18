@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacrimosa - Página Fan Oficial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h1>LACRIMOSA</h1>
+                </div>
+                
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link active">Inicio</a>
+                    <a href="discografia.html" class="nav-link">Discografía</a>
+                    <a href="galeria.html" class="nav-link">Galería</a>
+                    <a href="letras.html" class="nav-link">Letras</a>
+                    <a href="curiosidades.html" class="nav-link">Curiosidades</a>
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="mobile-nav-link active">Inicio</a>
+                <a href="discografia.html" class="mobile-nav-link">Discografía</a>
+                <a href="galeria.html" class="mobile-nav-link">Galería</a>
+                <a href="letras.html" class="mobile-nav-link">Letras</a>
+                <a href="curiosidades.html" class="mobile-nav-link">Curiosidades</a>
+                <a href="videos.html" class="mobile-nav-link">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="/img/screen1.png" alt="Tour Mundial 2025">
+                    
+                    <div class="slide-content">
+                        <!--<h2>Tour Mundial 2025</h2>
+                        <p>Lacrimosa presenta su nueva gira mundial</p>-->
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/img/screen2.jpg" alt="Nuevo Álbum">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Inicio del Tour por México</h2>
+                        <p>3 y 4 de Junio fueron noches inolvidables en el Circo Volador</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/img/screen3.jpg" alt="Concierto Sinfónico">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>El arlequin volvió a Latinoamerica</h2>
+                        <p>Argentina, Chile, Perú, Colombia, Ecuador</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/img/screen4.png" alt="35 Años">
+                    <!--<div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>35 Años de Música</h2>
+                        <p>Celebrando tres décadas de evolución musical</p>
+                    </div>--->
+                </div>
+            </div>
+            
+            <button class="slider-btn prev-btn">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn">
+                <i data-lucide="chevron-right"></i>
+            </button>
+            
+            <div class="slider-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+                <button class="indicator" data-slide="3"></button>
+            </div>
+        </section>
+
+        <!-- Tour Dates -->
+        <section class="tour-dates">
+            <div class="container">
+                <h2>Próximas fechas en México</h2>
+                <div class="tour-list">
+                    <div class="tour-item">
+                        <div class="tour-info">
+                            <div class="tour-date">
+                                <div class="date-day">10</div>
+                                <div class="date-month">Junio</div>
+                            </div>
+                            <div class="tour-details">
+                                <h3>Pachuca</h3>
+                                <p><i data-lucide="map-pin"></i>Explanada Pachuca</p>
+                                <p class="country">México</p>
+                            </div>
+                        </div>
+                        <button class="tour-btn">Entradas</button>
+                    </div>
+                    
+                    <div class="tour-item">
+                        <div class="tour-info">
+                            <div class="tour-date">
+                                <div class="date-day">11</div>
+                                <div class="date-month">Junio</div>
+                            </div>
+                            <div class="tour-details">
+                                <h3>Morelia</h3>
+                                <p><i data-lucide="map-pin"></i>Salón Arena</p>
+                                <p class="country">México</p>
+                            </div>
+                        </div>
+                        <button class="tour-btn">Entradas</button>
+                    </div>
+                    
+                    <div class="tour-item">
+                        <div class="tour-info">
+                            <div class="tour-date">
+                                <div class="date-day">12</div>
+                                <div class="date-month">Junio</div>
+                            </div>
+                            <div class="tour-details">
+                                <h3>León</h3>
+                                <p><i data-lucide="map-pin"></i>Foro del Lago</p>
+                                <p class="country">México</p>
+                            </div>
+                        </div>
+                        <button class="tour-btn">Entradas</button>
+                    </div>
+                    
+                    <div class="tour-item">
+                        <div class="tour-info">
+                            <div class="tour-date">
+                                <div class="date-day">13</div>
+                                <div class="date-month">Junio</div>
+                            </div>
+                            <div class="tour-details">
+                                <h3>Guadalajara</h3>
+                                <p><i data-lucide="map-pin"></i>C4 Concert House</p>
+                                <p class="country">México</p>
+                            </div>
+                        </div>
+                        <button class="tour-btn">Entradas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="latest-news">
+            <div class="container">
+                <h2>Noticias Recientes</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-date">
+                            <i data-lucide="calendar"></i>
+                            10 Enero 2025
+                        </div>
+                        <h3>Lacrimosa anuncia nuevo álbum "Testimonium"</h3>
+                        <p>Después de tres años, la banda alemana regresa con su decimosexto álbum de estudio...</p>
+                        <button class="read-more">Leer más →</button>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-date">
+                            <i data-lucide="calendar"></i>
+                            5 Enero 2025
+                        </div>
+                        <h3>Gira mundial confirmada para 2025</h3>
+                        <p>Tilo Wolff confirma las fechas de la esperada gira que incluirá Latinoamérica...</p>
+                        <button class="read-more">Leer más →</button>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-date">
+                            <i data-lucide="calendar"></i>
+                            28 Diciembre 2024
+                        </div>
+                        <h3>Colaboración especial con orquesta sinfónica</h3>
+                        <p>Lacrimosa trabajará con la Orquesta Filarmónica de Berlín para presentaciones especiales...</p>
+                        <button class="read-more">Leer más →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LACRIMOSA</h3>
+                    <p>Desde 1990, Lacrimosa ha sido pionera en la fusión del metal gótico con elementos sinfónicos, creando una experiencia musical única que trasciende fronteras y géneros.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes de la Banda</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Spotify"><i data-lucide="music"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Autor del Sitio</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Autor Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Autor Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                    <p class="author-note">Sitio fan no oficial creado con ❤️</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Lacrimosa Fan Site. Todos los derechos reservados a sus respectivos propietarios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades - Lacrimosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h1>LACRIMOSA</h1>
+                </div>
+                
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="discografia.html" class="nav-link">Discografía</a>
+                    <a href="galeria.html" class="nav-link">Galería</a>
+                    <a href="letras.html" class="nav-link">Letras</a>
+                    <a href="curiosidades.html" class="nav-link active">Curiosidades</a>
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Inicio</a>
+                <a href="discografia.html" class="mobile-nav-link">Discografía</a>
+                <a href="galeria.html" class="mobile-nav-link">Galería</a>
+                <a href="letras.html" class="mobile-nav-link">Letras</a>
+                <a href="curiosidades.html" class="mobile-nav-link active">Curiosidades</a>
+                <a href="videos.html" class="mobile-nav-link">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <!-- Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Curiosidades</h1>
+                <p>Descubre datos fascinantes, secretos y momentos únicos en la historia de Lacrimosa que quizás no conocías.</p>
+            </div>
+        </section>
+
+        <!-- Category Filters -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="origen">Origen</button>
+                    <button class="filter-btn" data-filter="banda">Banda</button>
+                    <button class="filter-btn" data-filter="musica">Música</button>
+                    <button class="filter-btn" data-filter="exito">Éxito</button>
+                    <button class="filter-btn" data-filter="arte">Arte</button>
+                    <button class="filter-btn" data-filter="fans">Fans</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curiosities Grid -->
+        <section class="curiosities-section">
+            <div class="container">
+                <div class="curiosities-grid">
+                    <div class="curiosity-card" data-category="origen">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="heart"></i>
+                            </div>
+                            <span class="curiosity-category">Origen</span>
+                        </div>
+                        <h3>El Significado de "Lacrimosa"</h3>
+                        <p>Lacrimosa significa "la que llora" en latín, haciendo referencia a la Virgen María en el contexto religioso. La banda eligió este nombre para reflejar la melancolía y profundidad emocional de su música.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="banda">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <span class="curiosity-category">Banda</span>
+                        </div>
+                        <h3>Dúo Internacional</h3>
+                        <p>Tilo Wolff (alemán) y Anne Nurmi (finlandesa) forman el núcleo de Lacrimosa desde 1993, creando una fusión única de las tradiciones musicales góticas alemanas y la melancolía nórdica finlandesa.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="musica">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="music"></i>
+                            </div>
+                            <span class="curiosity-category">Música</span>
+                        </div>
+                        <h3>Instrumentos Únicos</h3>
+                        <p>Lacrimosa ha utilizado instrumentos poco convencionales como el piano de cola, violines barrocos, órganos de iglesia y coros operísticos, integrándolos magistralmente con guitarras pesadas.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="exito">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="star"></i>
+                            </div>
+                            <span class="curiosity-category">Éxito</span>
+                        </div>
+                        <h3>Récord de Ventas</h3>
+                        <p>El álbum "Elodia" (1999) vendió más de 100,000 copias solo en Alemania, convirtiéndose en uno de los álbumes de metal gótico más exitosos comercialmente de la historia.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="musica">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <span class="curiosity-category">Récords</span>
+                        </div>
+                        <h3>La Canción Más Larga</h3>
+                        <p>La composición "Alleine zu zweit" del álbum "Elodia" dura 16 minutos y 28 segundos, siendo una de las piezas más ambiciosas y extensas en su discografía.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="arte">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="lightbulb"></i>
+                            </div>
+                            <span class="curiosity-category">Arte</span>
+                        </div>
+                        <h3>Innovación Visual</h3>
+                        <p>Lacrimosa fue una de las primeras bandas góticas en crear videos musicales cinematográficos, con producciones que parecían cortometrajes de horror romántico.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="fans">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <span class="curiosity-category">Fans</span>
+                        </div>
+                        <h3>Fanbase Latinoamericana</h3>
+                        <p>México y Argentina albergan algunas de las comunidades de fans más grandes de Lacrimosa fuera de Europa, con conciertos que regularmente se agotan en estas regiones.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="musica">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="music"></i>
+                            </div>
+                            <span class="curiosity-category">Colaboraciones</span>
+                        </div>
+                        <h3>Colaboraciones Clásicas</h3>
+                        <p>La banda ha colaborado con orquestas sinfónicas reales, incluyendo la London Symphony Orchestra para algunas grabaciones especiales de sus álbumes más recientes.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosity-card" data-category="banda">
+                        <div class="curiosity-header">
+                            <div class="curiosity-icon">
+                                <i data-lucide="heart"></i>
+                            </div>
+                            <span class="curiosity-category">Personal</span>
+                        </div>
+                        <h3>Romance Musical</h3>
+                        <p>Tilo Wolff y Anne Nurmi no solo son compañeros musicales, sino también pareja en la vida real, lo que añade una dimensión personal auténtica a sus composiciones sobre amor y pérdida.</p>
+                        <div class="curiosity-footer">
+                            <button class="read-more">Leer más →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Did You Know Section -->
+        <section class="did-you-know-section">
+            <div class="container">
+                <h2>¿Sabías que...?</h2>
+                <p class="section-subtitle">Algunos datos adicionales sobre Lacrimosa</p>
+                
+                <div class="did-you-know-grid">
+                    <div class="did-you-know-card">
+                        <h3>Primer Concierto en Latinoamérica</h3>
+                        <p>Su primera presentación en tierras latinoamericanas fue en México en 2001, marcando el inicio de una relación especial con sus fans hispanohablantes.</p>
+                    </div>
+                    
+                    <div class="did-you-know-card">
+                        <h3>Influencia Clásica</h3>
+                        <p>Tilo Wolff estudió música clásica antes de formar Lacrimosa, lo que explica la complejidad armónica de muchas de sus composiciones.</p>
+                    </div>
+                    
+                    <div class="did-you-know-card">
+                        <h3>Álbum Conceptual</h3>
+                        <p>"Elodia" es un álbum conceptual que narra la historia de una mujer en el siglo XVI, mostrando la capacidad narrativa de la banda.</p>
+                    </div>
+                    
+                    <div class="did-you-know-card">
+                        <h3>Idiomas Múltiples</h3>
+                        <p>Aunque principalmente cantan en alemán, han explorado el inglés, latín e incluso algunas frases en otros idiomas europeos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LACRIMOSA</h3>
+                    <p>Desde 1990, Lacrimosa ha sido pionera en la fusión del metal gótico con elementos sinfónicos, creando una experiencia musical única que trasciende fronteras y géneros.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes de la Banda</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Spotify"><i data-lucide="music"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Autor del Sitio</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Autor Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Autor Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                    <p class="author-note">Sitio fan no oficial creado con ❤️</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Lacrimosa Fan Site. Todos los derechos reservados a sus respectivos propietarios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

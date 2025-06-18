@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras - Lacrimosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h1>LACRIMOSA</h1>
+                </div>
+                
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="discografia.html" class="nav-link">Discografía</a>
+                    <a href="galeria.html" class="nav-link">Galería</a>
+                    <a href="letras.html" class="nav-link active">Letras</a>
+                    <a href="curiosidades.html" class="nav-link">Curiosidades</a>
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Inicio</a>
+                <a href="discografia.html" class="mobile-nav-link">Discografía</a>
+                <a href="galeria.html" class="mobile-nav-link">Galería</a>
+                <a href="letras.html" class="mobile-nav-link active">Letras</a>
+                <a href="curiosidades.html" class="mobile-nav-link">Curiosidades</a>
+                <a href="videos.html" class="mobile-nav-link">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <!-- Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Letras</h1>
+                <p>Explora la poesía y la profundidad lírica de Lacrimosa, desde sus textos originales hasta sus traducciones en español.</p>
+            </div>
+        </section>
+
+        <!-- Album Selector -->
+        <section class="album-selector-section">
+            <div class="container">
+                <div class="album-selector">
+                    <select id="albumSelect">
+                        <option value="testimonium">Testimonium (2025)</option>
+                        <option value="leidenschaft">Leidenschaft (2021)</option>
+                        <option value="hope">Hope (2015)</option>
+                        <option value="revolution">Revolution (2012)</option>
+                    </select>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lyrics Grid -->
+        <section class="lyrics-section">
+            <div class="container">
+                <div class="lyrics-grid" id="lyricsGrid">
+                    <!-- Testimonium Songs -->
+                    <div class="lyrics-card" data-album="testimonium">
+                        <div class="lyrics-header">
+                            <i data-lucide="music"></i>
+                            <h3>Zeugnis der Zeit</h3>
+                        </div>
+                        <div class="lyrics-content">
+                            <div class="lyrics-column">
+                                <h4>Original (Alemán)</h4>
+                                <div class="lyrics-text">
+                                    <p>Die Zeit vergeht wie Schatten</p>
+                                    <p>Durch die Nacht der Seele</p>
+                                    <p>Wir sind Zeugen dessen</p>
+                                    <p>Was war und was sein wird</p>
+                                    <p>In der Stille der Ewigkeit</p>
+                                </div>
+                            </div>
+                            <div class="lyrics-column">
+                                <h4>Traducción (Español)</h4>
+                                <div class="lyrics-text">
+                                    <p>El tiempo pasa como sombras</p>
+                                    <p>A través de la noche del alma</p>
+                                    <p>Somos testigos de aquello</p>
+                                    <p>Que fue y lo que será</p>
+                                    <p>En el silencio de la eternidad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lyrics-card" data-album="testimonium">
+                        <div class="lyrics-header">
+                            <i data-lucide="music"></i>
+                            <h3>Testimonium</h3>
+                        </div>
+                        <div class="lyrics-content">
+                            <div class="lyrics-column">
+                                <h4>Original (Alemán)</h4>
+                                <div class="lyrics-text">
+                                    <p>Mein Zeugnis für die Welt</p>
+                                    <p>Geschrieben in Tränen und Blut</p>
+                                    <p>Die Wahrheit meines Herzens</p>
+                                    <p>Singt durch die Dunkelheit</p>
+                                    <p>Für alle, die noch hören können</p>
+                                </div>
+                            </div>
+                            <div class="lyrics-column">
+                                <h4>Traducción (Español)</h4>
+                                <div class="lyrics-text">
+                                    <p>Mi testimonio para el mundo</p>
+                                    <p>Escrito en lágrimas y sangre</p>
+                                    <p>La verdad de mi corazón</p>
+                                    <p>Canta a través de la oscuridad</p>
+                                    <p>Para todos los que aún pueden escuchar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Leidenschaft Songs -->
+                    <div class="lyrics-card" data-album="leidenschaft" style="display: none;">
+                        <div class="lyrics-header">
+                            <i data-lucide="music"></i>
+                            <h3>Feuer der Leidenschaft</h3>
+                        </div>
+                        <div class="lyrics-content">
+                            <div class="lyrics-column">
+                                <h4>Original (Alemán)</h4>
+                                <div class="lyrics-text">
+                                    <p>Das Feuer brennt in mir</p>
+                                    <p>Leidenschaft ohne Ende</p>
+                                    <p>Durch Schmerz und Ekstase</p>
+                                    <p>Finde ich meinen Weg</p>
+                                    <p>Zu dir, meine Seele</p>
+                                </div>
+                            </div>
+                            <div class="lyrics-column">
+                                <h4>Traducción (Español)</h4>
+                                <div class="lyrics-text">
+                                    <p>El fuego arde en mí</p>
+                                    <p>Pasión sin fin</p>
+                                    <p>A través del dolor y el éxtasis</p>
+                                    <p>Encuentro mi camino</p>
+                                    <p>Hacia ti, mi alma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hope Songs -->
+                    <div class="lyrics-card" data-album="hope" style="display: none;">
+                        <div class="lyrics-header">
+                            <i data-lucide="music"></i>
+                            <h3>Hoffnung</h3>
+                        </div>
+                        <div class="lyrics-content">
+                            <div class="lyrics-column">
+                                <h4>Original (Alemán)</h4>
+                                <div class="lyrics-text">
+                                    <p>In der dunkelsten Stunde</p>
+                                    <p>Wenn alle Lichter erlöschen</p>
+                                    <p>Bleibt ein Funke der Hoffnung</p>
+                                    <p>Tief in unserem Herzen</p>
+                                    <p>Niemals wird er sterben</p>
+                                </div>
+                            </div>
+                            <div class="lyrics-column">
+                                <h4>Traducción (Español)</h4>
+                                <div class="lyrics-text">
+                                    <p>En la hora más oscura</p>
+                                    <p>Cuando todas las luces se apagan</p>
+                                    <p>Queda una chispa de esperanza</p>
+                                    <p>Profunda en nuestro corazón</p>
+                                    <p>Nunca morirá</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Revolution Songs -->
+                    <div class="lyrics-card" data-album="revolution" style="display: none;">
+                        <div class="lyrics-header">
+                            <i data-lucide="music"></i>
+                            <h3>Revolution</h3>
+                        </div>
+                        <div class="lyrics-content">
+                            <div class="lyrics-column">
+                                <h4>Original (Alemán)</h4>
+                                <div class="lyrics-text">
+                                    <p>Durch Nacht und Flut</p>
+                                    <p>Geht unser Fahrt</p>
+                                    <p>Kein Stern will uns leuchten</p>
+                                    <p>Kein Glück uns bewahren</p>
+                                    <p>Revolution der Seele</p>
+                                </div>
+                            </div>
+                            <div class="lyrics-column">
+                                <h4>Traducción (Español)</h4>
+                                <div class="lyrics-text">
+                                    <p>A través de los mares</p>
+                                    <p>Va nuestro viaje</p>
+                                    <p>Ninguna estrella quiere alumbrarnos</p>
+                                    <p>Ninguna suerte nos protege</p>
+                                    <p>Revolución del alma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- No lyrics message -->
+                <div class="no-lyrics" id="noLyrics" style="display: none;">
+                    <i data-lucide="music"></i>
+                    <p>Las letras de este álbum estarán disponibles próximamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="container">
+                <h2>Sobre las Letras de Lacrimosa</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Idiomas</h3>
+                        <p>Principalmente en alemán, con algunas canciones en inglés y latín</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Temática</h3>
+                        <p>Amor, pérdida, espiritualidad y la condición humana</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Estilo</h3>
+                        <p>Poético, melancólico y profundamente emotivo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LACRIMOSA</h3>
+                    <p>Desde 1990, Lacrimosa ha sido pionera en la fusión del metal gótico con elementos sinfónicos, creando una experiencia musical única que trasciende fronteras y géneros.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes de la Banda</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Spotify"><i data-lucide="music"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Autor del Sitio</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Autor Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Autor Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                    <p class="author-note">Sitio fan no oficial creado con ❤️</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Lacrimosa Fan Site. Todos los derechos reservados a sus respectivos propietarios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

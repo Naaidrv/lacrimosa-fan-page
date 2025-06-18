@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Lacrimosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h1>LACRIMOSA</h1>
+                </div>
+                
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="discografia.html" class="nav-link">Discografía</a>
+                    <a href="galeria.html" class="nav-link">Galería</a>
+                    <a href="letras.html" class="nav-link">Letras</a>
+                    <a href="curiosidades.html" class="nav-link">Curiosidades</a>
+                    <a href="videos.html" class="nav-link active">Videos</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Inicio</a>
+                <a href="discografia.html" class="mobile-nav-link">Discografía</a>
+                <a href="galeria.html" class="mobile-nav-link">Galería</a>
+                <a href="letras.html" class="mobile-nav-link">Letras</a>
+                <a href="curiosidades.html" class="mobile-nav-link">Curiosidades</a>
+                <a href="videos.html" class="mobile-nav-link active">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <!-- Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Videos</h1>
+                <p>Sumérgete en el universo visual de Lacrimosa a través de sus videos oficiales, presentaciones en vivo y documentales exclusivos.</p>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i data-lucide="filter"></i>
+                        Todos
+                    </button>
+                    <button class="filter-btn" data-filter="official">
+                        <i data-lucide="filter"></i>
+                        Videos Oficiales
+                    </button>
+                    <button class="filter-btn" data-filter="live">
+                        <i data-lucide="filter"></i>
+                        En Vivo
+                    </button>
+                    <button class="filter-btn" data-filter="documentary">
+                        <i data-lucide="filter"></i>
+                        Documentales
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Grid -->
+        <section class="videos-section">
+            <div class="container">
+                <div class="videos-grid">
+                    <div class="video-card" data-category="official">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dz6buyGOQJg?modestbranding=1&rel=0&controls=1&showinfo=0"
+                                title="Testimonium - Video Oficial"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="video-info">
+                            <h3>Avalon - Video Oficial</h3>
+                            <p>El video oficial del nuevo sencillo de Lacrimosa, dirigido por un reconocido cineasta alemán.</p>
+                            <div class="video-meta">
+                                <div class="video-views">
+                                <i data-lucide="thumbs-up"></i>
+                                17 k Me gusta
+                                </div>
+                                <div class="video-date">
+                                <i data-lucide="calendar"></i>
+                                3 noviembre 2024
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                                            
+                   <div class="video-card" data-category="official">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/Jhh7M2FJTCk?si=14Z75jdiYmax6aA1"
+                                title="Testimonium - Video Oficial"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="video-info">
+                            <h3>Liebe über Leben - Video Oficial</h3>
+                            <p>El video oficial del nuevo sencillo de Lacrimosa, dirigido por un reconocido cineasta alemán.</p>
+                            <div class="video-meta">
+                                <div class="video-views">
+                                <i data-lucide="thumbs-up"></i>
+                                6.5 k Me gusta
+                                </div>
+                                <div class="video-date">
+                                <i data-lucide="calendar"></i>
+                                17 noviembre 2023
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    
+                    <div class="video-card" data-category="official">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/5wNWPynoRzQ?si=2nBYgy9XPTTqMtQB"
+                                title="Testimonium - Video Oficial"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="video-info">
+                            <h3>RAUBTIER - Video Oficial</h3>
+                            <p>El video oficial del nuevo sencillo de Lacrimosa, dirigido por un reconocido cineasta alemán.</p>
+                            <div class="video-meta">
+                                <div class="video-views">
+                                <i data-lucide="thumbs-up"></i>
+                                16 k Me gusta
+                                </div>
+                                <div class="video-date">
+                                <i data-lucide="calendar"></i>
+                                26 noviembre 2021
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    
+                    <div class="video-card" data-category="official">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/vDBK8yN2lrU?si=-DV2xrqPgivQ-iCv"
+                                title="Testimonium - Video Oficial"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="video-info">
+                            <h3>LLichgestalt - Video Oficial</h3>
+                            <p>El video oficial del nuevo sencillo de Lacrimosa, dirigido por un reconocido cineasta alemán.</p>
+                            <div class="video-meta">
+                                <div class="video-views">
+                                <i data-lucide="thumbs-up"></i>
+                                16 k Me gusta
+                                </div>
+                                <div class="video-date">
+                                <i data-lucide="calendar"></i>
+                                26 noviembre 2021
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    
+                    <div class="video-card" data-category="documentary">
+                         <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/t7Ykhn7uzZU?si=EGRoI4rkS89yR4yZ"
+                                title="Testimonium - Video Oficial"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="video-info">
+                            <h3>Lichgestalt - Video Oficial</h3>
+                            <p>El vido oficial del nuevo sencillo de Lacrimosa, dirigido por un reconocido cineasta alemán.</p>
+                            <div class="video-meta">
+                                <div class="video-views">
+                                <i data-lucide="thumbs-up"></i>
+                                16 k Me gusta
+                                </div>
+                                <div class="video-date">
+                                <i data-lucide="calendar"></i>
+                                26 noviembre 2021
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="load-more">
+                    <button class="load-more-btn">Cargar más videos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Videos Oficiales</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25M+</div>
+                        <div class="stat-label">Visualizaciones Totales</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Conciertos Grabados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Documentales</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LACRIMOSA</h3>
+                    <p>Desde 1990, Lacrimosa ha sido pionera en la fusión del metal gótico con elementos sinfónicos, creando una experiencia musical única que trasciende fronteras y géneros.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes de la Banda</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Spotify"><i data-lucide="music"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Autor del Sitio</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Autor Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Autor Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                    <p class="author-note">Sitio fan no oficial creado con ❤️</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Lacrimosa Fan Site. Todos los derechos reservados a sus respectivos propietarios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

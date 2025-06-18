@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Lacrimosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h1>LACRIMOSA</h1>
+                </div>
+                
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="discografia.html" class="nav-link">Discografía</a>
+                    <a href="galeria.html" class="nav-link active">Galería</a>
+                    <a href="letras.html" class="nav-link">Letras</a>
+                    <a href="curiosidades.html" class="nav-link">Curiosidades</a>
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Inicio</a>
+                <a href="discografia.html" class="mobile-nav-link">Discografía</a>
+                <a href="galeria.html" class="mobile-nav-link active">Galería</a>
+                <a href="letras.html" class="mobile-nav-link">Letras</a>
+                <a href="curiosidades.html" class="mobile-nav-link">Curiosidades</a>
+                <a href="videos.html" class="mobile-nav-link">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <!-- Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Galería</h1>
+                <p>Una colección visual del legado de Lacrimosa a través de los años, capturando momentos únicos en estudio, conciertos y sesiones fotográficas.</p>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i data-lucide="filter"></i>
+                        Todas
+                    </button>
+                    <button class="filter-btn" data-filter="albums">
+                        <i data-lucide="filter"></i>
+                        Álbumes
+                    </button>
+                    <button class="filter-btn" data-filter="tours">
+                        <i data-lucide="filter"></i>
+                        Tours
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">                   
+                     <div class="gallery-item" data-category="albums">
+                        <img src="/img/lament-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3><a href="/lament.html">Sesión fotográfica Lament</a></h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/Leidenschaft2021.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3><a href="pages/leidenschaft.html">Sesión fotográfica Leidenschaft</a></h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/testimonium-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Testimonium</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/hoffnun-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Hoffnung</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/revolution-anne-tilo.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Revolution</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/sehnsucht-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Sehnsucht</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/lichtgestalt-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Lichgestalt</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/echos-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Echos</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/fassade-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Fassade</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/elodia-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Elodia</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/stille-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Stille</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/inferno-tilo-anne.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Inferno</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/satura-tilo.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Satura</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/Einsamkeit-tilo.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Eisamkeit</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="albums">
+                        <img src="/img/angst-tilo.jpg" alt="Sesión fotográfica Leidenschaft">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Sesión fotográfica Angst</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Berlín, 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge albums">Álbum</div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tours">
+                        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Concierto Sinfónico Madrid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Concierto Sinfónico Madrid</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Teatro Real, 2019
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge tours">Tour</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="tours">
+                        <img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg" alt="Festival Gothic Summer">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Festival Gothic Summer</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Alemania, 2018
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge tours">Tour</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="tours">
+                        <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" alt="Tour Latinoamericano">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tour Latinoamericano</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Buenos Aires, 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge tours">Tour</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="tours">
+                        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Backstage Moments">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Backstage Moments</h3>
+                                <div class="gallery-location">
+                                    <i data-lucide="map-pin"></i>
+                                    Barcelona, 2017
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-badge tours">Tour</div>
+                    </div>
+                </div>
+                
+                <div class="load-more">
+                    <button class="load-more-btn">Cargar más imágenes</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Fotos de Tours</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Sesiones de Álbum</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">35</div>
+                        <div class="stat-label">Años Documentados</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LACRIMOSA</h3>
+                    <p>Desde 1990, Lacrimosa ha sido pionera en la fusión del metal gótico con elementos sinfónicos, creando una experiencia musical única que trasciende fronteras y géneros.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes de la Banda</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Spotify"><i data-lucide="music"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Autor del Sitio</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Autor Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Autor Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                    <p class="author-note">Sitio fan no oficial creado con ❤️</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Lacrimosa Fan Site. Todos los derechos reservados a sus respectivos propietarios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
