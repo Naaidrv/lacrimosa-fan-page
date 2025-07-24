@@ -14,6 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
 function initNavigation() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
+
+        // Añade esto para los enlaces desktop:
+    const desktopLinks = document.querySelectorAll('.desktop-menu .nav-link');
+    desktopLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evita que otros eventos interfieran
+            window.location.href = link.getAttribute('href'); // Redirección manual
+        });
+    });
     
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
