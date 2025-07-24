@@ -46,120 +46,206 @@
 
     <main>
         <!-- Hero Slider -->
-        <section class="hero-slider">
-            <div class="slider-container">
-                <div class="slide active">
-                    <img src="/img/screen1.png" alt="Tour Mundial 2025">
-                    
-                    <div class="slide-content">
-                        <!--<h2>Tour Mundial 2025</h2>
-                        <p>Lacrimosa presenta su nueva gira mundial</p>-->
-                    </div>
+    <div class="slider-container">
+            <div class="gradient-left"></div>
+                <div class="gradient-right"></div>
+        <!-- Slide 1 - Original (22 Agosto 2026, SOLD OUT) -->
+        <div class="slide active" id="slide1">
+            <div class="slide-content">
+                <div class="image-section">
+                    <img src="/img/countdown1.png" alt="LACRIMOSA Concert" class="concert-image">
                 </div>
-                <div class="slide">
-                    <img src="/img/screen2.jpg" alt="Nuevo Álbum">
-                    <div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h2>Inicio del Tour por México</h2>
-                        <p>3 y 4 de Junio fueron noches inolvidables en el Circo Volador</p>
+                <div class="info-section-count" style="    text-align: center;">
+                    <h1 class="faltan-title">FALTAN:</h1>
+                    <div class="countdown">
+                        <div class="countdown-item" >
+                            <span class="countdown-number" id="days1">415</span>
+                            <span class="countdown-label">DÍAS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours1">02</span>
+                            <span class="countdown-label">HORAS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes1">25</span>
+                            <span class="countdown-label">MINUTOS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds1">25</span>
+                            <span class="countdown-label">SEGUNDOS</span>
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <img src="/img/screen3.jpg" alt="Concierto Sinfónico">
-                    <div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h2>El arlequin volvió a Latinoamerica</h2>
-                        <p>Argentina, Chile, Perú, Colombia, Ecuador</p>
+                    <div class="date-section">
+                        <h2 class="event-date">22 ♦ AGOSTO ♦ 26</h2>
+                        <div class="status-banner sold-out">Boletos agotados</div>
                     </div>
-                </div>
-                <div class="slide">
-                    <img src="/img/screen4.png" alt="35 Años">
-                    <!--<div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h2>35 Años de Música</h2>
-                        <p>Celebrando tres décadas de evolución musical</p>
-                    </div>--->
+                    <div class="footer-links">
+                        <div class="sponsors" style="z-index: 10;">
+                            <span class="sponsor"><a href="https://lacrimosa.com/" target="_blank" style="text-decoration: none; color: aliceblue;">LACRIMOSA.COM</a></span>
+                            <span class="sponsor"><a href="https://dilemma.com.mx/" target="_blank" style="text-decoration: none; color: aliceblue;">Dilemma.com.mx</a></span>
+                            <span class="sponsor"><a href="https://www.arenacdmx.com/" target="_blank" style="text-decoration: none; color: aliceblue;">ARENA CDMX</a></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <button class="slider-btn prev-btn">
-                <i data-lucide="chevron-left"></i>
-            </button>
-            <button class="slider-btn next-btn">
-                <i data-lucide="chevron-right"></i>
-            </button>
-            
-            <div class="slider-indicators">
-                <button class="indicator active" data-slide="0"></button>
-                <button class="indicator" data-slide="1"></button>
-                <button class="indicator" data-slide="2"></button>
-                <button class="indicator" data-slide="3"></button>
+        </div>
+
+        <!-- Slide 2 - 23 Agosto 2026, Boletos Disponibles -->
+        <div class="slide" id="slide2">
+            <div class="slide-content">
+                <div class="image-section">
+                    <img src="/img/countdown2.png" alt="LACRIMOSA Concert" class="concert-image">
+                </div>
+                <div class="info-section-count" style="    text-align: center;">
+                    <h1 class="faltan-title">FALTAN:</h1>
+                    <div class="countdown">
+                        <div class="countdown-item" >
+                            <span class="countdown-number" id="days2">415</span>
+                            <span class="countdown-label">DÍAS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours2">02</span>
+                            <span class="countdown-label">HORAS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes2">25</span>
+                            <span class="countdown-label">MINUTOS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds2">25</span>
+                            <span class="countdown-label">SEGUNDOS</span>
+                        </div>
+                    </div>
+                    <div class="date-section">
+                        <h2 class="event-date">23 ♦ AGOSTO ♦ 26</h2>
+                        <div class="status-banner available">Boletos disponibles</div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="sponsors" style="z-index: 10;">
+                            <span class="sponsor"><a href="https://lacrimosa.com/" target="_blank" style="text-decoration: none; color: aliceblue;">LACRIMOSA.COM</a></span>
+                            <span class="sponsor"><a href="https://dilemma.com.mx/" target="_blank" style="text-decoration: none; color: aliceblue;">Dilemma.com.mx</a></span>
+                            <span class="sponsor"><a href="https://www.arenacdmx.com/" target="_blank" style="text-decoration: none; color: aliceblue;">ARENA CDMX</a></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Slide 3 - Banner Ilustrativo -->
+        <div class="slide" id="slide3">
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h1 class="banner-title">LACRIMOSA</h1>
+                    <h2 class="banner-subtitle">GIRA MUNDIAL 2026</h2>
+                    <p class="banner-text">Una experiencia única con orquesta sinfónica</p>
+                    <div class="banner-cta">
+                        <button class="cta-button">MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+                <div class="banner-overlay"></div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows - Bottom Right -->
+        <div class="slider-navigation">
+            <button class="slider-arrow prev" onclick="previousSlide()">‹</button>
+            <button class="slider-arrow next" onclick="nextSlide()">›</button>
+        </div>
+    </div>
 
         <!-- Tour Dates -->
         <section class="tour-dates">
             <div class="container">
-                <h2>Próximas fechas en México</h2>
+                <h2>Próximas presentaciones</h2>
                 <div class="tour-list">
                     <div class="tour-item">
                         <div class="tour-info">
                             <div class="tour-date">
-                                <div class="date-day">10</div>
-                                <div class="date-month">Junio</div>
+                                <div class="date-day">25</div>
+                                <div class="date-month">Septiembre</div>
                             </div>
                             <div class="tour-details">
-                                <h3>Pachuca</h3>
-                                <p><i data-lucide="map-pin"></i>Explanada Pachuca</p>
-                                <p class="country">México</p>
+                                <h3>Hamburgo</h3>
+                                <p><i data-lucide="map-pin"></i>Markthalle</p>
+                                <p class="country">Alemania</p>
                             </div>
                         </div>
-                        <button class="tour-btn">Entradas</button>
+                        <button class="tour-btn"><a href="https://markthalle-hamburg.de/konzerte/lacrimosa-und/">Adquirir boletos</a></button>
                     </div>
                     
                     <div class="tour-item">
                         <div class="tour-info">
                             <div class="tour-date">
-                                <div class="date-day">11</div>
-                                <div class="date-month">Junio</div>
+                                <div class="date-day">26</div>
+                                <div class="date-month">Septiembre</div>
                             </div>
                             <div class="tour-details">
-                                <h3>Morelia</h3>
-                                <p><i data-lucide="map-pin"></i>Salón Arena</p>
-                                <p class="country">México</p>
+                                <h3>Leipzig</h3>
+                                <p><i data-lucide="map-pin"></i>Felsenkeller</p>
+                                <p class="country">Alemania</p>
                             </div>
                         </div>
-                        <button class="tour-btn">Entradas</button>
+                        <button class="tour-btn"><a href="https://city-ticket.de/events/lacrimosa-leipzig-felsenkeller-2025-09-26/">Adquirir boletos</a></button>
                     </div>
                     
                     <div class="tour-item">
                         <div class="tour-info">
                             <div class="tour-date">
-                                <div class="date-day">12</div>
-                                <div class="date-month">Junio</div>
+                                <div class="date-day">27</div>
+                                <div class="date-month">Septiembre</div>
                             </div>
                             <div class="tour-details">
-                                <h3>León</h3>
-                                <p><i data-lucide="map-pin"></i>Foro del Lago</p>
-                                <p class="country">México</p>
+                                <h3>Jena</h3>
+                                <p><i data-lucide="map-pin"></i>F-Haus</p>
+                                <p class="country">Alemania</p>
                             </div>
                         </div>
-                        <button class="tour-btn">Entradas</button>
+                        <button class="tour-btn"><a href="https://www.eventim.de/event/lacrimosa-lament-world-tour-2025-f-haus-19942349/">Adquirir boletos</a></button>
                     </div>
                     
                     <div class="tour-item">
                         <div class="tour-info">
                             <div class="tour-date">
-                                <div class="date-day">13</div>
-                                <div class="date-month">Junio</div>
+                                <div class="date-day">28</div>
+                                <div class="date-month">Septiembre</div>
                             </div>
                             <div class="tour-details">
-                                <h3>Guadalajara</h3>
-                                <p><i data-lucide="map-pin"></i>C4 Concert House</p>
-                                <p class="country">México</p>
+                                <h3>Berlin</h3>
+                                <p><i data-lucide="map-pin"></i>Columbia Theater</p>
+                                <p class="country">Alemania</p>
                             </div>
                         </div>
-                        <button class="tour-btn">Entradas</button>
+                        <button class="tour-btn"><a href="https://columbia-theater.de/event/20250928-lacrimosa/">Adquirir boletos</a></button>
+                    </div>
+
+                    <div class="tour-item">
+                        <div class="tour-info">
+                            <div class="tour-date">
+                                <div class="date-day">29</div>
+                                <div class="date-month">Septiembre</div>
+                            </div>
+                            <div class="tour-details">
+                                <h3>Kraków</h3>
+                                <p><i data-lucide="map-pin"></i>Hype Park</p>
+                                <p class="country">Polonia</p>
+                            </div>
+                        </div>
+                        <button class="tour-btn"><a href="https://knockoutmusicstore.pl/wydarzenia/lacrimosa?fbclid=IwY2xjawLuihdleHRuA2FlbQIxMABicmlkETFjQ1hQZVVxaUgyMFEyUmRiAR5JajmLy5br6LgLtR7UOwMKcOz7CNDqwC51F98WuVF2k612_W2N6y8Wld9Niw_aem_3QLh20VBz11kKYpNNtxHvA">Adquirir boletos</a></button>
+                    </div>
+
+                    <div class="tour-item">
+                        <div class="tour-info">
+                            <div class="tour-date">
+                                <div class="date-day">30</div>
+                                <div class="date-month">Septiembre</div>
+                            </div>
+                            <div class="tour-details">
+                                <h3>Hannover</h3>
+                                <p><i data-lucide="map-pin"></i>Musikzentrum</p>
+                                <p class="country">Alemania</p>
+                            </div>
+                        </div>
+                        <button class="tour-btn"><a href="https://musikzentrum-hannover.de/veranstaltung/lacrimosa-und-soon/">Adquirir boletos</a></button>
                     </div>
                 </div>
             </div>
@@ -240,5 +326,6 @@
     </footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/countdown.js"></script>
 </body>
 </html>

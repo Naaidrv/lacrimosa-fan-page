@@ -126,118 +126,375 @@ h3 {
 }
 
 /* Hero Slider */
-.hero-slider {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.slider-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 20px;
 }
 
-.slider-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.gradient-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.gradient-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
 }
 
 .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+      background: #0e0e0e;
+  /*background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);*/
 }
 
 .slide.active {
-    opacity: 1;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-.slide-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 .slide-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: flex;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Image Section - Simplified */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.concert-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 1000px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Info Section */
+.info-section-count{
+  flex: 1;
+  padding-left: 80px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faltan-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  justify-content: center;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-number {
+  display: block;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.countdown-label {
+  font-size: 14px;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+
+.date-section {
+  margin-bottom: 60px;
+}
+
+.event-date {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.status-banner {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sold-out {
+  background: #dc2626;
+  color: #fff;
+}
+
+.available {
+  background: #16a34a;
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.sponsors {
+    width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content:center;
+}
+
+.sponsor {
+  padding: 5px 10px;
+  border: 1px solid #444;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* Banner Slide (Slide 3) */
+.banner-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #1a1a1a 0%, #333 50%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.banner-title {
+  font-size: 120px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.banner-subtitle {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ccc;
+  letter-spacing: 3px;
+}
+
+.banner-text {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: #aaa;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #dc2626, #991b1b);
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23333" opacity="0.3"/><circle cx="80" cy="40" r="1" fill="%23555" opacity="0.5"/><circle cx="40" cy="80" r="1.5" fill="%23444" opacity="0.4"/></svg>')
+    repeat;
+  opacity: 0.1;
+}
+
+/* Navigation Arrows - Bottom Right */
+.slider-navigation {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+  z-index: 100;
+}
+
+.slider-arrow {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.slider-arrow.prev {
+  margin-right: 5px;
+}
+
+.slider-arrow.next {
+  margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .slide-content {
+    flex-direction: column;
     text-align: center;
-    z-index: 10;
-    max-width: 800px;
-    padding: 0 1rem;
+    padding: 40px 20px;
+  }
+
+  .info-section {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .image-section {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .concert-image {
+    max-width: 400px;
+    max-height: 480px;
+  }
+
+  .faltan-title {
+    font-size: 36px;
+  }
+
+  .countdown-number {
+    font-size: 48px;
+  }
+
+  .event-date {
+    font-size: 32px;
+  }
+
+  .banner-title {
+    font-size: 80px;
+  }
+
+  .slider-navigation {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
-.slide-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
 
-.slide-content p {
-    font-size: 1.25rem;
-    color: #E5E7EB;
-    margin-bottom: 2rem;
-}
+  .navigation {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 20;
-}
+  .countdown {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.slider-btn:hover {
-    background: rgba(0, 0, 0, 0.7);
-}
+  .countdown-number {
+    font-size: 36px;
+  }
 
-.prev-btn {
-    left: 1rem;
-}
+  .concert-image {
+    max-width: 300px;
+    max-height: 360px;
+  }
 
-.next-btn {
-    right: 1rem;
-}
+  .banner-title {
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
 
-.slider-indicators {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
-    z-index: 20;
-}
+  .banner-subtitle {
+    font-size: 24px;
+  }
 
-.indicator {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    border: none;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 
-.indicator.active {
-    background: #ffffff;
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 }
 
 /* Tour Dates */
@@ -322,6 +579,11 @@ h3 {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.tour-btn a{
+    color: white;
+    text-decoration: none;
 }
 
 .tour-btn:hover {
