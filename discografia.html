@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css">
+         <link rel="stylesheet" href="/css/music-player.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
@@ -97,7 +98,7 @@
                                         </div>
                                     <h3>Leidenschaft</h3>
                                     <p>Pasión y compromiso en un sonido gótico moderno. Letras en alemán e inglés, temas como “Liebe über Leben” o “Exodus” mezclan melancolía, energía y profundidad sinfónica. Una reafirmación de su identidad artística. </p>
-                                    <button class="album-btn">
+                                    <button class="album-btn" onclick="musicPlayer.loadPlaylist('leidenschaft')">
                                         <i data-lucide="disc"></i>
                                         Escuchar álbum
                                     </button>
@@ -146,7 +147,7 @@
                                         </div>
                                     <h3>Hoffnung</h3>
                                     <p>Diez temas profundamente emotivos, con una orquesta extensa y letras introspectivas. El álbum celebra la esperanza y la renovación, especialmente con el extenso opening “Mondfeuer” de más de 15 minutos. </p>
-                                    <button class="album-btn">
+                                    <button class="album-btn"  onclick="musicPlayer.loadPlaylist('hoffnung')">
                                         <i data-lucide="disc"></i>
                                         Escuchar álbum
                                     </button>
@@ -170,7 +171,7 @@
                                         </div>
                                     <h3>Revolution</h3>
                                     <p>Un llamado a la rebelión personal y social. Usa guitarras potentes, ritmos marcados y letras críticas. Mezcla metal con la orquesta, mostrando una cara más contundente y urgente de Lacrimosa. </p>
-                                    <button class="album-btn">
+                                    <button class="album-btn" onclick="musicPlayer.loadPlaylist('revolution')">
                                         <i data-lucide="disc"></i>
                                         Escuchar álbum
                                     </button>
@@ -194,7 +195,7 @@
                                         </div>
                                     <h3>Sehnsucht</h3>
                                     <p>Rico y dramático: incluye coro infantil, guitarras afiladas y letras sobre pérdida y esperanza. “Feuer” y otras piezas reflejan la madurez compositiva del dúo, con momentos en inglés y profundas emociones. </p>
-                                    <button class="album-btn">
+                                    <button class="album-btn" onclick="musicPlayer.loadPlaylist('sehnsucht')">
                                         <i data-lucide="disc"></i>
                                         Escuchar álbum
                                     </button>
@@ -218,7 +219,7 @@
                                         </div>
                                     <h3>Lichtgestalt</h3>
                                     <p>Una obra más luminosa en torno a temas de redención y luz. Combina metal gótico con arreglos sinfónicos e incluye textos bíblicos en “Hohelied der Liebe”. Fuerte emocionalmente, con un estilo más poético.</p>
-                                    <button class="album-btn">
+                                    <button class="album-btn" onclick="musicPlayer.loadPlaylist('lichtgestalt')">
                                         <i data-lucide="disc"></i>
                                         Escuchar álbum
                                     </button>
