@@ -1192,7 +1192,7 @@ h3 {
 /* Album Selector */
 .album-selector-section {
   padding: 2rem 0;
-  background: ##0e0e0e;
+  background: #0e0e0e;
   border-bottom: 1px solid #374151;
 }
 
@@ -1241,7 +1241,7 @@ h3 {
 }
 
 .lyrics-card {
-  background: ##0e0e0e;
+  background: #0e0e0e;
   border: 1px solid #374151;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -1315,7 +1315,7 @@ h3 {
 /* Info Section */
 .info-section {
   padding: 4rem 0;
-  background: ##0e0e0e;
+  background: #0e0e0e;
   text-align: center;
 }
 
@@ -1352,7 +1352,7 @@ h3 {
 }
 
 .curiosity-card {
-  background: ##0e0e0e;
+  background: #0e0e0e;
   border: 1px solid #374151;
   border-radius: 0.5rem;
   padding: 1.5rem;
@@ -1438,7 +1438,7 @@ h3 {
 /* Did You Know Section */
 .did-you-know-section {
   padding: 4rem 0;
-  background: ##0e0e0e;
+  background: #0e0e0e;
 }
 
 .did-you-know-section h2 {
@@ -1488,7 +1488,7 @@ h3 {
 }
 
 .video-card {
-  background: ##0e0e0e;
+  background: #0e0e0e;
   border: 1px solid #374151;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -1557,7 +1557,7 @@ h3 {
 /* Stats Section */
 .stats-section {
   padding: 4rem 0;
-  background: ##0e0e0e;
+  background: #0e0e0e;
 }
 
 .stats-grid {
@@ -1584,7 +1584,7 @@ h3 {
 
 /* Footer */
 .footer {
-  background: ##0e0e0e;
+  background: #0e0e0e;
   border-top: 1px solid #374151;
 }
 
